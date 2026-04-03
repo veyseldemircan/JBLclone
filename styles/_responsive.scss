@@ -1,0 +1,111 @@
+@media (min-width: 768px) {
+  .home {
+    &-img {
+      width: 320px;
+    }
+    &-title {
+      font-size: 256px;
+      top: -64px;
+    }
+    &-social {
+      top: 0;
+      left: -220px;
+      align-content: center;
+      bottom: 0;
+      white-space: nowrap;
+    }
+  }
+  .sponsor {
+    &-container {
+      grid-template-columns: repeat(4, max-content) !important;
+    }
+  }
+}
+@media (min-width: 1150px) {
+  .container {
+    margin-inline: auto;
+  }
+  .home {
+    &-img {
+      width: 500px;
+    }
+    &-title {
+      font-size: 25rem;
+      top: -8px;
+      column-gap: 16px;
+    }
+    &-tooltip {
+      &-img {
+        width: initial;
+      }
+      &-text {
+        transform: translate(82px, -58px);
+        font-size: $normal-font-size;
+      }
+    }
+    &-socials {
+      .home-social-link {
+        font-size: 24px;
+      }
+    }
+  }
+  .about {
+    &-container {
+      grid-template-columns: 400px 500px;
+      justify-content: center;
+    }
+    &-img {
+      width: 500px !important;
+      // İlgili elemana vermek istediğimiz özellik önceki still özelliğiyle çakışınca bunun önemli olduğunu belirttik.
+    }
+    &-data {
+      text-align: initial !important;
+    }
+  }
+  .model {
+    &-img {
+      width: 600px !important;
+    }
+    &-tooltip {
+      &-text {
+        font-size: $normal-font-size !important;
+      }
+      &-3 {
+        left: 400px !important;
+        bottom: 150px !important;
+      }
+      &-1 {
+        left: 14rem !important;
+        top: 140px !important;
+      }
+      &-2 {
+        right: 24px !important;
+        top: 16px !important;
+      }
+      &-4 {
+        left: 120px !important;
+        bottom: 100px !important;
+      }
+    }
+  }
+}
+@media (max-width: 850px) {
+  header .nav-list {
+    display: none;
+  }
+  .favorites {
+    &-content {
+      flex-direction: column;
+      img {
+        width: 150px !important;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .home {
+    &-social {
+      left: -100px;
+    }
+  }
+}

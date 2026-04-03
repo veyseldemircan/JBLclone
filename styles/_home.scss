@@ -1,0 +1,92 @@
+@import "./variables";
+.home {
+  &-container {
+    display: grid;
+    padding: 112px 16px;
+    position: relative;
+    row-gap: 40px;
+  }
+  &-content {
+    position: relative;
+    display: grid;
+    justify-self: center;
+  }
+  &-img {
+    width: 220px;
+  }
+  &-title {
+    font-size: $biggest-font-size;
+    position: absolute;
+    color: $first-color;
+    display: flex;
+    column-gap: 7px;
+    top: -65px;
+    justify-self: center;
+    span:nth-child(2) {
+      z-index: -1;
+    }
+  }
+  &-tooltip {
+    position: absolute;
+    top: -8px;
+    right: 24px;
+    &-img {
+      width: 60px;
+    }
+    &-text {
+      background: $gradient-color;
+      position: absolute;
+      color: $white-color;
+      padding: 6px 12px;
+      transform: translate(60px, -46px);
+      border-radius: 64px;
+      font-weight: 600;
+      font-size: $small-font-size;
+    }
+  }
+  &-social {
+    display: grid;
+    justify-content: start;
+    row-gap: 96px;
+    position: absolute;
+    top: 140px;
+    left: -220px;
+
+    &-text {
+      transform: rotate(90deg);
+      position: relative;
+      font-size: $small-font-size;
+      font-weight: $font-semi-bold;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 48px;
+        height: 1px;
+
+        background-color: $text-color;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        right: -64px;
+      }
+    }
+  }
+  &-socials {
+    display: grid;
+    row-gap: 12px;
+    margin-left: 21px;
+    .home-social-link {
+      color: $text-color;
+      font-size: 20px;
+      transition: all 0.4s;
+      &:hover {
+        color: $first-color;
+      }
+    }
+  }
+}
+.button-container {
+  display: grid;
+  justify-self: center;
+  margin-top: 35px;
+}
