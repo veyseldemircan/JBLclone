@@ -1,4 +1,3 @@
-````markdown
 # JBL Clone Project
 
 Welcome to the **JBL Clone Project**! A modern, responsive, and visually appealing e-commerce UI clone inspired by JBL’s official website. This project focuses on clean design, responsive layouts, and advanced styling using **SCSS** and **CSS Grid**.
@@ -51,8 +50,3 @@ cd jbl-clone
 For any questions or feedback:
 
 **Veysel Demircan** – [veyseldemircana@gmail.com](mailto:veyseldemircana@gmail.com)
-
-```
-
-```
-````
